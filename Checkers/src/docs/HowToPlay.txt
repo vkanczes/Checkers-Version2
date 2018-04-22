@@ -1,0 +1,3 @@
+In this game of checkers you can play either against a human opponent or the computer.
+
+There are several levels of difficulty:

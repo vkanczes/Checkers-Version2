@@ -29,7 +29,7 @@ public class CheckerFrame extends JFrame implements ActionListener{
         gmP.imageUpdate(null, 0, 0, 608, 401, getDefaultCloseOperation());
         add(gmP);
         startGameButtonText.setHorizontalAlignment(SwingConstants.LEADING);
-        startGameButtonText.setIcon(new ImageIcon(getClass().getResource("/images/checker.jpg")));
+        //startGameButtonText.setIcon(new ImageIcon(getClass().getResource("/images/checker.jpg")));
         startGameButtonText.setBackground(Color.LIGHT_GRAY);
         startGameButtonText.setCursor(new Cursor(Cursor.HAND_CURSOR));
         startGameButtonText.setBounds(100,405,300,90);  // original 154,420,200,60

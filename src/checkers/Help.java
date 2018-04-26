@@ -35,7 +35,7 @@ public class Help extends JDialog {
     private void addText() {
         String str;
         try {
-            BufferedReader b=new BufferedReader(new FileReader(new File("Checkers/src/docs/HowToPlay.txt")));
+            BufferedReader b=new BufferedReader(new FileReader(new File("guidance/HowToPlay.txt")));
             try {
                 while((str=b.readLine())!=null)
                     txt.append(str+"\n");

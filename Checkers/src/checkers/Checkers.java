@@ -244,6 +244,10 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
             level.setVisible(true);
         }
         if(e.getActionCommand().equalsIgnoreCase("2-Player")){
+        	 yellowCheckerImage.setIcon(yellowN);
+        	 redCheckerImage.setIcon(redN);
+        	 yellowKingCheckerImage.setIcon(yellowK);
+        	 redKingCheckerImage.setIcon(redK);
             new PlaySound("Checkers/src/sounds/option.wav").start();
             colorText.setEnabled(false);
             colorText.setVisible(false);

@@ -26,13 +26,13 @@ public class CheckerFrame extends JFrame implements ActionListener{
         gmP.setBounds(0,0,400,401);
 
         // may need to remove this
-        gmP.imageUpdate(null, 0, 0, 608, 401, getDefaultCloseOperation());
+        //gmP.imageUpdate(null, 0, 0, 608, 401, getDefaultCloseOperation());
         add(gmP);
         startGameButtonText.setHorizontalAlignment(SwingConstants.LEADING);
         //startGameButtonText.setIcon(new ImageIcon(getClass().getResource("/images/checker.jpg")));
         startGameButtonText.setBackground(Color.LIGHT_GRAY);
         startGameButtonText.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        startGameButtonText.setBounds(100,405,300,90);  // original 154,420,200,60
+        startGameButtonText.setBounds(180,415,150,50);  // original 154,420,200,60
         startGameButtonText.setFont(new Font("Times new roman",Font.BOLD,20));
         startGameButtonText.addActionListener(this);
         startGameButtonText.setFocusPainted(false);

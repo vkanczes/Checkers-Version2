@@ -26,7 +26,7 @@ public class Help extends JDialog {
         setLocation((int)getToolkit().getScreenSize().getWidth()/2-250,(int)getToolkit().getScreenSize().getHeight()/2-300);
         setVisible(false);
         add(hlp);
-        setSize(500,600);
+        setSize(900,600);
         setResizable(false);
         setTitle("How To Play");
         setDefaultCloseOperation(JDialog.HIDE_ON_CLOSE);
@@ -35,7 +35,7 @@ public class Help extends JDialog {
     private void addText() {
         String str;
         try {
-            BufferedReader b=new BufferedReader(new FileReader(new File("guidance/HowToPlay.txt")));
+        	BufferedReader b=new BufferedReader(new FileReader(new File("src//guidance//HowToPlay.txt")));
             try {
                 while((str=b.readLine())!=null)
                     txt.append(str+"\n");

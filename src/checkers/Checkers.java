@@ -33,7 +33,7 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
     Help hp=new Help();
 
     JLabel modeText=new JLabel("Mode");
-    JLabel colorText=new JLabel("Color");
+    JLabel colorText=new JLabel("Colour");
     JLabel difficultyLevelText=new JLabel("Difficulty Level");
     JLabel redCheckerImage=new JLabel();
     JLabel redCheckerText=new JLabel("Opponent's Piece");
@@ -281,7 +281,7 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
             new PlaySound("src//sounds//button.wav").start();
             newGame();
         }
-        if(e.getActionCommand().equalsIgnoreCase("Undo") && undoCount>1){
+        if(e.getActionCommand().equalsIgnoreCase("Undo") && undoCount>3){
             new PlaySound("src//sounds//button.wav").start();
             undo();
         }
@@ -399,7 +399,7 @@ public class Checkers extends JPanel implements ActionListener, ItemListener, Mo
 
         undoCount++;
 
-        if(undoCount>1){
+        if(undoCount>3){
             if(selectedMode==1 && difficulty!=4)
                 undoButton.setEnabled(true);
             else if(selectedMode==2)
